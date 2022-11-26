@@ -1,0 +1,220 @@
+@media(max-width:1200px){
+    .container{
+        max-width: 992px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:992px){
+ .container{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+ }
+}
+@media(max-width:768px){
+    .categories__wrap{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 10px;
+
+    }
+    
+    .container{
+        max-width: 576px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+.header{
+   height:  700px;
+
+    }
+    .catalog{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .catalog_item{
+        max-width: 384px;
+    }
+
+}
+
+@media(max-width:576px){
+    .container{
+        max-width: 500px;
+    }
+    .nav{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .logo{
+        padding: 10px 0 5px;
+    }
+    .nav-link{
+        padding: 5px;
+        border: none;
+        font-size: 13px;
+    line-height: 16px;
+    }
+    form{
+        margin-bottom: 10px;
+        width: 25 0px;
+    }
+    .header{
+        height: 500px;
+    }
+    .header__logo{
+        width: 235px;
+        height: 150px;
+    }
+    .header__title{
+        font-size: 49px;
+        line-height: 65px;
+        margin: 10px 0 5px;
+    }
+    .header__text{
+        font-size: 23px;
+        line-height: 29px;
+    }
+    .catalog{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+        /* flex-wrap: wrap; */
+        /* gap: 10px; */
+    }
+    .catalog_item{
+        width: 284px;px;
+        /* border-radius: 40px; */
+    }
+    .categories__wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         gap: 10px;
+    }
+    .categories__list li{
+        margin-bottom: 10px;
+    }
+}
+ 
+
+@media(max-width:320px){
+
+    .container{
+        max-width: 250px;
+        padding: 0 5px;
+        margin: auto;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .bars{
+        position: absolute;   
+        top: 78px;
+        right: 15px;
+
+    }
+    .bar{
+        opacity: 1;
+        color: black;
+    }
+    
+   .link{
+    display: block;
+    /* position: absolute; */
+    font-size: 12px;
+    line-height: 15px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-top: none;
+    border-bottom: 1px solid black;
+     background: white;
+   }
+   .menu__bar li:nth-last-child(1) .link {
+    border-bottom: none;
+   }
+   .nav-link{
+    transition: .5s;
+   }
+   .nav-link:hover {
+    border-color: none;
+    /* background: bisque; */
+    background: #181D28;
+    color: white;
+}
+    .menu__bar{
+         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        /* padding: 5px 20px; */
+        right: 0;
+        top: 120px;
+        border: 1px solid black;
+        
+       
+        z-index: -1;
+        transition: .4s;
+        }
+        .bars:focus + .menu__bar{
+            top: 114px;
+            z-index: 1;
+            right: 0;
+        }
+        
+       form{
+        margin-bottom: 10px;
+        max-width: 200px;
+       }
+       .header{
+        height: 300px;
+       }
+       .header__logo{
+        width: 100px;
+        height: 70px;
+       }
+       .header__title{
+        font-size: 30px;
+        line-height: 35px;
+        margin: 5px 0 0;
+       }
+       .header__text{
+        font-size: 20px;
+       line-height: 25px;
+       } 
+       .about__title{
+        font-size: 14px;
+ line-height: 18px;
+       }
+       .categories{
+        font-size: 20px;
+       line-height: 25px;
+       }
+       .catalog{
+        flex-wrap: wrap;
+        /* gap: 10px; */
+       }
+       .catalog__logo{
+        width: 70px;
+        height: 70px;
+       }
+       .catalog_item-name{
+        font-size: 14px;
+        line-height: 25px;
+       }
+       .catalog_item{
+        width: 160px;
+        
+       }
+       .categories__wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+       }
+       .about__text{
+        font-size: 11px;
+        line-height: 14px;
+       }
+}
