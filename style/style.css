@@ -138,7 +138,8 @@ button {
     flex-direction: column;
     align-items: center;
     background: #181D28;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     padding: 20px 0;
     transition: background 0.3s ease ;
     cursor: pointer;
@@ -195,3 +196,4 @@ background: #6B4B6B;;
 .categories{
     padding-bottom: 40px;
 }
+
